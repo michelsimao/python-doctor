@@ -31,6 +31,8 @@ readonly REPORT_DIR="$PROJECT_ROOT/reports"
 readonly TMP_DIR="$PROJECT_ROOT/tmp"
 readonly STATE_DIR="$PROJECT_ROOT/state"
 
+readonly DATE_FORMAT="%F %T"
+
 #
 # Versão
 #
