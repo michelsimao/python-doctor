@@ -2,43 +2,14 @@
 
 set -Eeuo pipefail
 
-#
-# ============================================================
-# Python Doctor
-# Main Entry Point
-# ============================================================
-#
-
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 
-#
-# Módulos essenciais
-#
-
-# shellcheck source=/dev/null
 source "$PROJECT_ROOT/core/config.sh"
-
-# shellcheck source=/dev/null
-source "$PROJECT_ROOT/lib/colors.sh"
-
-# shellcheck source=/dev/null
 source "$PROJECT_ROOT/core/loader.sh"
 
-#
-# Carrega a infraestrutura da aplicação
-#
-
-load_core_modules
-
-#
-# Inicializa o ambiente
-#
+load_all_modules
 
 bootstrap
-
-#
-# Executa o comando solicitado
-#
 
 dispatch_command "$@"

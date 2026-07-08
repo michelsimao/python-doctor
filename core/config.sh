@@ -22,6 +22,7 @@ readonly CORE_DIR="$PROJECT_ROOT/core"
 readonly LIB_DIR="$PROJECT_ROOT/lib"
 readonly COMMANDS_DIR="$PROJECT_ROOT/commands"
 readonly CHECKS_DIR="$PROJECT_ROOT/checks"
+readonly RENDERERS_DIR="$PROJECT_ROOT/renderers"
 
 readonly ASSETS_DIR="$PROJECT_ROOT/assets"
 readonly DOCS_DIR="$PROJECT_ROOT/docs"
