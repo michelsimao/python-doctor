@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -Eeuo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+BASE_DIR="$(dirname "$SCRIPT_DIR")"
+
+source "$BASE_DIR/lib/colors.sh"
+source "$BASE_DIR/lib/utils.sh"
+source "$BASE_DIR/lib/system.sh"
+
+init
+
+show_banner
+
+collect_system_information
